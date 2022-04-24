@@ -13,6 +13,12 @@ module Myapp
     config.time_zone = 'Tokyo' #Time.zone.nowとかの時に日本時間を使用する
     config.active_record.default_timezone = :local #DBの読み書きを日本時間でやる
 
+    config.generators do |g|
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
