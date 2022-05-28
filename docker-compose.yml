@@ -1,5 +1,17 @@
 version: "3"
 services:
+  webpack:
+    build: .
+    volumes:
+      - .:/myapp
+      - gem_data:/usr/local/bundle
+    environment:
+      NODE_ENV: development
+      RAILS_ENV: development
+      WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
+    command: bash -c "bin/webpack-dev-server"
+    ports:
+      - '3035:3035'
   db:
     image: mysql:8.0
     volumes:
@@ -18,6 +30,8 @@ services:
       - "3000:3000"
     depends_on:
       - db
+    environment:
+      WEBPACKER_DEV_SERVER_HOST: webpack
 volumes:
   mysql_data:
   gem_data:
