@@ -1,5 +1,26 @@
-<h1 class="text-blue-500 text-9xl">Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="wrapper">
+  <header class="p-3">
+    <div class="flex">
+      <h1 class="logo">
+        <a href="#">
+          <%= image_tag "icon_white.png", alt: "筋TRADEのロゴ", class:"w-auto h-10 ml-5" %>
+        </a>
+      </h1>
+      <nav class="ml-auto">
+        <ul class="flex">
+          <li class="mx-1"><a href="#" class="text-white">ログイン</a></li>
+          <li class="mx-1"><a href="#" class="text-white">ゲストログイン</a></li>
+          <li class="mx-1"><a href="#" class="text-blue-900 bg-yellow-300">新規登録</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
 
 
-<p class="text-red-500 font-bold hover:bg-yellow-200">これはテストです</p>
+<style>
+  header {
+    background-image: url(<%= asset_path "top_page1.jpg" %>);
+    background-size: cover;
+  }
+</style>
