@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="about py-16">
+    <div class="about py-16 px-12">
       <div class="contents_wrap">
         <h2 class="text-blue-900 text-center text-2xl font-bold">『筋TRADE』とは？</h2>
         <p class="description text-center text-gray-400 mt-6">
@@ -42,6 +42,52 @@
           <span>「胸を鍛えるのに効果的なメニュー」「〇〇のサプリについて」「減量方法」etc</span><br>
           <span>皆さんがお持ちの情報を交換しましょう！</span>
         </p>
+        <div class="about_inner flex justify-between mt-10 ">
+          <section class="about_detail w-2/6">
+            <div class="about_detail__head">
+              <figure class="about_detail__image">
+                <%= image_tag "thread-image.png", alt: "スレ作成の画像", class:"mx-auto" %>
+              </figure>
+            </div>
+            <div class="about_detail__contents">
+              <h3 class="about_detail__title">スレ作成</h3>
+              <div class="about_detail__text">
+                <span>あなたが気になる筋トレ関連の</span><br>
+                <span>スレが作成できます。</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="about_detail w-2/6">
+            <div class="about_detail__head">
+              <figure class="about_detail__image">
+                <%= image_tag "chat-image.png", alt: "チャットの画像", class:"" %>
+              </figure>
+            </div>
+            <div class="about_detail__contents">
+              <h3 class="about_detail__title">チャット</h3>
+              <div class="about_detail__text">
+                <span>スレ内にてユーザー同士で</span><br>
+                <span>チャットによる会話ができます。</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="about_detail w-2/6">
+            <div class="about_detail__head">
+              <figure class="about_detail__image">
+                <%= image_tag "like-image.png", alt: "いいねの画像", class:"" %>
+              </figure>
+            </div>
+            <div class="about_detail__contents">
+              <h3 class="about_detail__title">いいね</h3>
+              <div class="about_detail__text">
+                <span>コメントに”いいね”することで</span><br>
+                <span>マイページに保存できます。</span>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
     <div class="carousel_thread"></div>
