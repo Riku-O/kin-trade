@@ -17,9 +17,9 @@
   </header>
 
   <div class="main">
-    <div class="view_area h-screen">
-      <div class="main_visual h-full">
-        <div class="main_visual__bg h-2/3">
+    <div class="view_area">
+      <div class="main_visual">
+        <div class="main_visual__bg h-400">
           <div class="contents_wrap pt-24 ">
             <div class="main_visual__txt text-white">
               <p class="main_catch text-center text-4xl">
@@ -34,7 +34,15 @@
         </div>
       </div>
     </div>
-    <div class=" about">
+    <div class="about py-16">
+      <div class="contents_wrap">
+        <h2 class="text-blue-900 text-center text-2xl font-bold">『筋TRADE』とは？</h2>
+        <p class="description text-center text-gray-400 mt-6">
+          <span>筋TRADEは筋トレに関する情報を交換できるサービスです。</span><br>
+          <span>「胸を鍛えるのに効果的なメニュー」「〇〇のサプリについて」「減量方法」etc</span><br>
+          <span>皆さんがお持ちの情報を交換しましょう！</span>
+        </p>
+      </div>
     </div>
     <div class="carousel_thread"></div>
   </div>
@@ -45,10 +53,11 @@
 <style>
   .main_visual__bg {
     background-image: url(<%= asset_path "top_page1.jpg" %>);
-    background-position: 25% 75%;
+    background-position: 44% 56%;
     background-size: cover;
     position: relative;
     z-index: -3;
+    height: 400px;
   }
 
   .main_visual__bg::before {
