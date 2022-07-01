@@ -7,13 +7,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      colors: {
-        accent: "#FFB600",
-      },
-      height: {
-        400: "400px",
-      },
+    colors: {
+      accent: "#FFB600",
+    },
+    height: {
+      400: "400px",
     },
   },
   variants: {
