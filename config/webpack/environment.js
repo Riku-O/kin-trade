@@ -17,3 +17,4 @@ environment.loaders.keys().forEach((loaderName) => {
   const loader = environment.loaders.get(loaderName);
   loader.use.forEach(hotfixPostcssLoaderConfig);
 });
+module.exports = environment;
