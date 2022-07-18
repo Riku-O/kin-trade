@@ -26,7 +26,7 @@
                 <span>筋トレに関する情報をトレード(交換)</span><br>
                 <span>略して『筋TRADE』</span>
                 <%= form_with url: "http://www.google.co.jp/search", method: :get, class: "text-center mt-16" do |form| %>
-                <%= form.submit "🔍", class: "py-2 px-2" %><%= form.text_field :search, placeholder: "筋トレに関するスレを検索する", class: "w-60 py-2" %>
+                <%= form.submit "🔍", class: "py-2 px-2 bg-white" %><%= form.text_field :search, placeholder: "筋トレに関するスレを検索する", class: "w-60 py-2" %>
                 <% end %>
               </p>
             </div>
@@ -91,23 +91,20 @@
       </div>
     </div>
     <div class="slider_wrapper">
-      <div class="slider bg-blue-700 h-72">
+      <div class="slider bg-blue-700 h-[500px]">
       </div>
     </div>
   </div>
 
   <footer class="px-10 py-6">
     <div class="footer_wrapper flex px-8 py-6">
-      <h1 class="logo">
-        <a href="#">
-          <%= image_tag "icon_white.png", alt: "筋TRADEのロゴ", class:"w-auto h-10 ml-5" %>
-        </a>
-      </h1>
-      <nav class="ml-auto">
-        <ul class="flex">
-          <li class="mx-1"><a href="#" class="text-blue-900">ログイン</a></li>
-          <li class="mx-1"><a href="#" class="text-blue-900">ゲストログイン</a></li>
-          <li class="mx-1"><a href="#" class="text-blue-900 bg-yellow-300">新規登録</a></li>
+      <nav class="w-full">
+        <ul class="flex justify-between w-full">
+          <li class=""><a href="#"><%= image_tag "icon_black.png", alt: "筋TRADEのロゴ", class:"w-auto h-10 ml-5" %></a>
+          </li>
+          <li class=""><a href="#" class="text-blue-900">ログイン</a></li>
+          <li class=""><a href="#" class="text-blue-900">ゲストログイン</a></li>
+          <li class=""><a href="#" class="text-blue-900 bg-yellow-300">新規登録</a></li>
         </ul>
       </nav>
     </div>
