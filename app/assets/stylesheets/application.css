@@ -13,3 +13,5 @@
  *= require_tree .
  *= require_self
  */
+@import url("slick-theme.css");
+@import url("slick.css");
